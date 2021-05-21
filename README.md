@@ -21,3 +21,22 @@ Para instalar de manera local ejecute los siguientes comandos:
 - Crear un super usuario: `./manage.py createsuperuser`
 
 - Iniciar servidor local: `./manage.py runserver`
+
+## Despliegue en Heroku
+
+Para instalar en Heroku ejecute los siguientes comandos:
+
+- Crear aplicación en Heroku: `heroku create`
+
+- Configurar variables de entorno:
+
+```bash
+heroku config:set SECRET_KEY="[SECRET_KEY]"
+heroku config:set HOST="[Heroku URL]"
+```
+
+- Configurar production settings: `heroku config:set DJANGO_SETTINGS_MODULE=djangofire.production`
+
+- Hacer Git Push a Heroku: `git push heroku main`
+
+- Crear un super usuario: `heroku run python manage.py createsuperuser`

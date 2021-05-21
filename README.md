@@ -14,7 +14,7 @@ Para instalar de manera local ejecute los siguientes comandos:
 
 - Activar entorno virtual: `source .venv/bin/activate`
 
-- Instalar paquetes: `pip3 install -r requirements.txt`
+- Instalar paquetes: `pip3 install -r djangofire/requirements.txt`
 
 - Migrar estructura base de datos: `./manage.py migrate`
 
